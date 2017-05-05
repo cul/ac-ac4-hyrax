@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a base install of Hyrax at CUL to be used for planning and further investigation.
 
-Things you may want to cover:
+## Running application in **development**
+1. Follow setup described in the hyrax README (https://github.com/projecthydra-labs/hyrax#getting-started). To get this running on my mac I had to install:
+   - ImageMagick, ghostscript (via Homebrew)
+   - FITS (https://github.com/projecthydra-labs/hyrax#characterization)
+   - Redis was installed, but I had to start it via `redis-server`
 
-* Ruby version
+2. Copy `config/secrets.template.yml` to `config/secrets.yml`
 
-* System dependencies
+3. Add fits executable path to `config/secrets.yml`
 
-* Configuration
+4. Run `bundle install`
+   - Note: I recommend creating a separate gemset for this project.
 
-* Database creation
+5. Start redis and leave running in background
+  ```
+  redis-server
+  ```
 
-* Database initialization
+5. Start rails application
+   ```
+   rails hydra:server
+   ```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+6. The administrator is currently set up to be admin@example.com. Create an account with that email in order to get admin privileges.
