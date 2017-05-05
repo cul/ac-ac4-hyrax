@@ -25,3 +25,6 @@
 
 # Ignore secrets.
 /config/secrets.yml
+
+# Ignore redis dump file.
+/dump.rdb
