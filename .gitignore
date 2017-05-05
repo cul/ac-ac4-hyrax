@@ -20,5 +20,8 @@
 # Ignore Byebug command history file.
 .byebug_history
 
-# Ignore FITS log
+# Ignore FITS log.
 /fits.log
+
+# Ignore secrets.
+/config/secrets.yml
