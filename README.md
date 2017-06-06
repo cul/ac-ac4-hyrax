@@ -15,14 +15,16 @@ This is a base install of Hyrax at CUL to be used for planning and further inves
 4. Run `bundle install`
    - Note: I recommend creating a separate gemset for this project.
 
-5. Start redis and leave running in background
+5. Run `rake db:migrate`
+
+6. Start redis and leave running in background
   ```
   redis-server
   ```
 
-5. Start rails application
+7. Start rails application
    ```
    rails hydra:server
    ```
 
-6. The administrator is currently set up to be admin@example.com. Create an account with that email in order to get admin privileges.
+8. The administrator is currently set up to be admin@example.com. Create an account with that email in order to get admin privileges.
