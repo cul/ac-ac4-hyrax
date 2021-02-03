@@ -1,3 +1,5 @@
+> :warning: &nbsp;This repository is no longer maintained!  This is an old, test installation of Hyrax.  You can find the newer, non-Hyrax version of Academic Commons here: https://github.com/cul/ac-academiccommons
+
 # README
 
 This is a base install of Hyrax at CUL to be used for planning and further investigation.
